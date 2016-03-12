@@ -1,0 +1,482 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{799D1F28-0DD9-4C40-966E-854CE836C614}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>trainticket</RootNamespace>
+    <AssemblyName>trainticket</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FEFC4E415338C2BB2FA663FD5800DAFBBCE22EF6</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>trainticket_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json.Net20">
+      <HintPath>..\..\..\..\..\Newtonsoft.Json.Net20\Newtonsoft.Json.Net20.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmaboutall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmaboutall.Designer.cs">
+      <DependentUpon>frmaboutall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadmin_managecontact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin_managecontact.designer.cs">
+      <DependentUpon>frmadmin_managecontact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadmin_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin_main.Designer.cs">
+      <DependentUpon>frmadmin_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadmin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmin_login.Designer.cs">
+      <DependentUpon>frmadmin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_online.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_online.designer.cs">
+      <DependentUpon>frmuser_online.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_order.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_order.designer.cs">
+      <DependentUpon>frmuser_order.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_choose.designer.cs">
+      <DependentUpon>frmuser_choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_info.Designer.cs">
+      <DependentUpon>frmuser_info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_main.Designer.cs">
+      <DependentUpon>frmuser_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_offline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_offline.Designer.cs">
+      <DependentUpon>frmuser_offline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_contact.designer.cs">
+      <DependentUpon>frmuser_contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_login.designer.cs">
+      <DependentUpon>frmuser_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_reg.designer.cs">
+      <DependentUpon>frmuser_reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser_trainno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmuser_trainno.Designer.cs">
+      <DependentUpon>frmuser_trainno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmworker_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworker_main.Designer.cs">
+      <DependentUpon>frmworker_main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmworker_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworker_login.Designer.cs">
+      <DependentUpon>frmworker_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmworker_seat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworker_seat.designer.cs">
+      <DependentUpon>frmworker_seat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmworker_train.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmworker_train.Designer.cs">
+      <DependentUpon>frmworker_train.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmaboutall.resx">
+      <DependentUpon>frmaboutall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmin_managecontact.resx">
+      <DependentUpon>frmadmin_managecontact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmin_main.resx">
+      <DependentUpon>frmadmin_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmin_login.resx">
+      <DependentUpon>frmadmin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_online.resx">
+      <DependentUpon>frmuser_online.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_order.resx">
+      <DependentUpon>frmuser_order.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_choose.resx">
+      <DependentUpon>frmuser_choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_info.resx">
+      <DependentUpon>frmuser_info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_main.resx">
+      <DependentUpon>frmuser_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_offline.resx">
+      <DependentUpon>frmuser_offline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_contact.resx">
+      <DependentUpon>frmuser_contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_login.resx">
+      <DependentUpon>frmuser_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_reg.resx">
+      <DependentUpon>frmuser_reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmuser_trainno.resx">
+      <DependentUpon>frmuser_trainno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworker_main.resx">
+      <DependentUpon>frmworker_main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworker_login.resx">
+      <DependentUpon>frmworker_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworker_seat.resx">
+      <DependentUpon>frmworker_seat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmworker_train.resx">
+      <DependentUpon>frmworker_train.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="trainticket_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\train.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hexie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hexie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\border.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\set1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\submit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usersubmit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlogin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userlogin2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removecontact2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newcontact2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newcontact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\removecontact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\model.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\model1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\change2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yuding.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yuding2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaxun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaxun1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chaxun2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tmp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userinfo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gray1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setset1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setset11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setset2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\modify2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ooo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timetable.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dongche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hexiebai.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="train2.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
